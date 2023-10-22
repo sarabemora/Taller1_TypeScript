@@ -12,12 +12,21 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 text-center">
-                <h1>TV Series</h1>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong>TV Series</strong></a>
+          </div>
+        </nav>
+    </div>
+    <br/>
+    <br/>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
                 <table class="table">
-                    <thead class="table-dark">
+                    <caption><strong>Season average: </strong><strong id="promedio"></strong></caption>
+                    <thead class="table-bordered">
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
@@ -25,12 +34,8 @@
                             <th scope="col">Seasons</th>
                         </tr>
                     </thead>
-                    <tbody id="series"></tbody>
+                    <tbody id="series" class="table-secondary"></tbody>
                 </table>
-                <div class="row justify-content-end">
-                    <h5 class="col-4"><strong>Season average: </strong></h5>
-                    <h5 class="col-4" id="promedio"><strong></strong></h5>
-                </div>
 
             </div>
         </div>
